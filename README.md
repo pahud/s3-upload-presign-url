@@ -19,10 +19,6 @@ $ docker run -ti -v $HOME/.aws:/root/.aws -e S3_BUCKET=pahud-demo-us-west-2 -e S
 > node index.js
 
 https://pahud-demo-us-west-2.s3.amazonaws.com/100M?AWSAccessKeyId=AKIAI3CALFU43GAFC6DA&Expires=1524625153&Signature=8c%2Fy2daM%2FlL60sDZ9%2Fzck2IZK6M%3D
-a8667f01ae5b:s3-presign-upload-url hunhsieh$ curl -T ./100M 'https://pahud-demo-us-west-2.s3.amazonaws.com/100M?AWSAccessKeyId=AKIAI3CALFU43GAFC6DA&Expires=1524625153&Signature=8c%2Fy2daM%2FlL60sDZ9%2Fzck2IZK6M%3D' > /dev/null
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
- 75  100M    0     0   75 75.5M      0  3012k  0:00:33  0:00:25  0:00:08 3535k
 ```
 
 

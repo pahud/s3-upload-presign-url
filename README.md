@@ -4,7 +4,9 @@
 
 #### Usage: 
 
-###### docker run -ti -v $HOME/.aws:/root/.aws -e S3_BUCKET=<S3_UPLOAD_BUCKET_NAME> -e S3_KEY=<S3_OBJECT_KEY_NAME> -e EXPIRES_IN=<EXPIRES_IN_SECONDS> pahud/s3-presign-upload-url
+```
+docker run -ti -v $HOME/.aws:/root/.aws -e S3_BUCKET=<S3_UPLOAD_BUCKET_NAME> -e S3_KEY=<S3_OBJECT_KEY_NAME> -e EXPIRES_IN=<EXPIRES_IN_SECONDS> pahud/s3-presign-upload-url
+```
 
 
 

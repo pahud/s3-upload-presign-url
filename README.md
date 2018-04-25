@@ -26,12 +26,12 @@ https://pahud-demo-us-west-2.s3.amazonaws.com/100M?AWSAccessKeyId=AKIAI3CALFU43G
 For China Beijing region, you need to specify the region code: **AWS_REGION='cn-north-1'**
 
 ```
-$ docker run -ti -v $HOME/.aws:/root/.aws -e S3_BUCKET=pahud-demo-us-west-2 -e S3_KEY=100M -e EXPIRES_IN=120 -e AWS_PROFILE=bjs -e AWS_REGION='cn-north-1' pahud/s3-presign-upload-url
+$ docker run -ti -v $HOME/.aws:/root/.aws -e S3_BUCKET=pahud-bjs -e S3_KEY=100M -e EXPIRES_IN=120 -e AWS_PROFILE=bjs -e AWS_REGION='cn-north-1' pahud/s3-presign-upload-url
 
 > s3-presign-upload-url@1.0.0 start /app
 > node index.js
 
-https://pahud-demo-us-west-2.s3.cn-north-1.amazonaws.com.cn/100M?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAOEVQOGI2VHQNTNHA%2F20180425%2Fcn-north-1%2Fs3%2Faws4_request&X-Amz-Date=20180425T031701Z&X-Amz-Expires=120&X-Amz-Signature=403250e7afea49504781d9b932168312124e55ecb66b0acbdcb7cdc6dc452ff1&X-Amz-SignedHeaders=host
+https://pahud-bjs.s3.cn-north-1.amazonaws.com.cn/100M?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAOEVQOGI2VHQNTNHA%2F20180425%2Fcn-north-1%2Fs3%2Faws4_request&X-Amz-Date=20180425T031701Z&X-Amz-Expires=120&X-Amz-Signature=403250e7afea49504781d9b932168312124e55ecb66b0acbdcb7cdc6dc452ff1&X-Amz-SignedHeaders=host
 ```
 
 
